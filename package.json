@@ -4,7 +4,7 @@
   "description": "Repositório para o trabalho de PIA",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --config ./webpack.config.js --mode development",
+    "dev": "webpack serve --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
