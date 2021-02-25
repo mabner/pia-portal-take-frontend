@@ -1,5 +1,16 @@
-import React from 'react';
+import './App.css';
 
-const App = ({ title }) => <div>{title}</div>;
+function App() {
+	return (
+		<div className="App">
+			<header className="App-header">
+				<p>Portal de Ferramentas</p>
+				<a href="/auth/github" class="link">
+					Login com GitHub
+				</a>
+			</header>
+		</div>
+	);
+}
 
 export default App;
