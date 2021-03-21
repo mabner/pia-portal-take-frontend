@@ -5,9 +5,10 @@ import logo from '../../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
 
 
-export default props =>
-    <aside className="logo">
-        <Link to="/" className="logo">
-            <img src={logo} alt="Take Blip" />
-        </Link>
-</aside>
+export default () => (
+	<aside className="logo">
+		<Link to="/" className="logo">
+			<img src={logo} alt="Take Blip" />
+		</Link>
+	</aside>
+);

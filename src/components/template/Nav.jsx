@@ -2,7 +2,7 @@ import './Nav.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default (props) => (
+export default () => (
 	<aside className="menu-area">
 		<nav className="menu">
 			{/* Refatorar pra componente */}

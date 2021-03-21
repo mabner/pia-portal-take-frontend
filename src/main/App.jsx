@@ -14,7 +14,7 @@ import Routes from './Routes';
 import Footer from '../components/template/Footer';
 
 // Teste <HashRouter> for deploy if <BrowserRouter> presents any problems
-export default ( props ) => (
+export default () => (
 	<BrowserRouter>
 		<div className="app">
 			<Logo />
