@@ -1,0 +1,12 @@
+header.header {
+    background:linear-gradient(270deg,#343c4c,#242b36 50%,#1d1d1d);
+    color: #fff;
+    padding: 0px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* box-shadow: var(--shadow); */
+}
+
+header.header h1 {
+    font-size: 1.8em;
+}

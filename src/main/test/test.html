@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Take Blip - Conversas que transformam negócios</title>
+        <meta name="description"
+            content="Confira aqui nossos resultados na prática. Alguns cases de sucesso de clientes que utilizaram a solução Take Blip de contato inteligente. Contrate agora!">
+        <link rel="alternate" hreflang="x-default" href="https://www.take.net/" />
+        <link rel="alternate" hreflang="pt-br" href="https://www.take.net/" />
+        <link rel="alternate" hreflang="en" href="https://www.take.net/en/home/" />
+        <script
+            type="text/javascript">( function ( d ) { d.className = d.className.replace( /\bno-js\b/, 'js' ); } )( document.documentElement );</script>
+        <script>var d = document; var w = window; var h = w.location.host; var l = [];
+            function menuInit()
+            {
+                var btnBurguer = d.querySelectorAll( '.btn-burguer' )[ 0 ]; var menuItem = d.querySelectorAll( '.menu-list__item' ); var menuLinks = d.querySelectorAll( '.menu-list' )[ 0 ].getElementsByTagName( 'a' ); var subMenuItem = d.querySelectorAll( '.isdropdown--second-level' ); var gtmSub = d.querySelectorAll( '.gtm-trc-menu' ); var languageMenu = d.querySelectorAll( '.isdropdown--flag' )[ 0 ]; var languageList = d.querySelectorAll( '.language__list' )[ 0 ];
+                ; var _nav = d.querySelectorAll( '.nav' )[ 0 ]; var _body = d.body; var SCROLL_Y = 40;
+                function addClass( el, c ) { el.classList.add( c ) }
+                function removeClass( el, c ) { el.classList.remove( c ) }
+                function clearMenu( arr ) { for ( var i = 0; i < arr.length; i++ ) { var _this = arr[ i ]; if ( _this.className.indexOf( 'active' ) !== -1 ) { removeClass( _this, 'active' ); } } }
+                function toogleBurger( e ) { var _this = e.currentTarget; if ( _this.className.indexOf( 'active' ) !== -1 ) { removeClass( _this, 'active' ); removeClass( _body, 'block-overflow' ); removeClass( _nav, 'toggle-menu' ); _this.attributes[ 'aria-pressed' ].value = false; } else { addClass( _this, 'active' ); addClass( _body, 'block-overflow' ); addClass( _nav, 'toggle-menu' ); _this.attributes[ 'aria-pressed' ].value = true; } }
+                function activeMenu( e ) { const _this = e.currentTarget; if ( _this.href.indexOf( '#' ) !== -1 ) { e.preventDefault() } if ( _this.className.indexOf( 'active' ) !== -1 ) { removeClass( _this, 'active' ); } else { closeAll(); addClass( _this, 'active' ); } }
+                function activeSubMenu( e ) { const _this = e.currentTarget; if ( _this.href.indexOf( '#' ) !== -1 ) { e.preventDefault() } if ( _this.className.indexOf( 'active' ) !== -1 ) { removeClass( _this, 'active' ); } else { clearMenu( subMenuItem ); addClass( _this, 'active' ); } }
+                function activeLang( e ) { e.stopPropagation(); const _this = e.currentTarget; if ( _this.className.indexOf( 'active' ) !== -1 ) { removeClass( _this, 'active' ); removeClass( languageList, 'active' ); } else { closeAll(); addClass( _this, 'active' ); addClass( languageList, 'active' ); } }
+                function closeAll() { clearMenu( menuItem ); clearMenu( subMenuItem ); removeClass( languageMenu, 'active' ); removeClass( languageList, 'active' ); }
+                function toogleMenu() { if ( w.pageYOffset > SCROLL_Y ) { addClass( _body, 'header-fixed' ); } else { removeClass( _body, 'header-fixed' ); } }
+                function prefetch( e ) { const _this = e.currentTarget; const href = _this.href; if ( !href ) { return; } if ( href.indexOf( h ) !== -1 ) { if ( href.indexOf( '#' ) === -1 && l.indexOf( href ) === -1 ) { var prl = d.createElement( "link" ); prl.setAttribute( "rel", "prerender" ); prl.setAttribute( "href", href ); d.head.appendChild( prl ); l.push( href ); } } }
+                function addHandlers()
+                {
+                    for ( var i = 0; i < gtmSub.length; i++ ) { gtmSub[ i ].addEventListener( 'mouseover', prefetch ) }; btnBurguer.addEventListener( 'click', toogleBurger ); _body.addEventListener( 'click', closeAll ); w.addEventListener( 'scroll', toogleMenu ); for ( var i = 0; i < menuItem.length; i++ ) { menuItem[ i ].addEventListener( 'click', activeMenu ) } for ( var i = 0; i < subMenuItem.length; i++ ) { subMenuItem[ i ].addEventListener( 'click', activeSubMenu ) } for ( var i = 0; i < menuLinks.length; i++ ) { menuLinks[ i ].addEventListener( 'click', function ( e ) { e.stopPropagation(); } ) }; languageMenu.addEventListener( 'click', activeLang );
+                }
+                addHandlers();
+            }
+            if ( d.readyState != 'loading' ) { menuInit(); } else if ( d.addEventListener ) { d.addEventListener( 'DOMContentLoaded', menuInit ); } else { d.attachEvent( 'onreadystatechange', function () { if ( d.readyState == 'interactive' ) menuInit(); } ); }</script>
+        <script>var d = document; var w = window; var h = w.location.host; var l = [];
+            function cookieInit()
+            {
+                var modalCookie = document.querySelectorAll( '.modal-cookie' ); var modalClose = document.querySelectorAll( '.modal-cookie_close' ); var modalButton = document.querySelectorAll( '.modal-cookie_button' );
+
+                function addClass( el, c ) { el.classList.add( c ) } function removeClass( el, c ) { el.classList.remove( c ) }
+                function closeParentModal( el ) { var _this = el.parentElement; if ( _this.tagName === 'BODY' || _this.tagName === 'body' ) { return; } else if ( _this.className.indexOf( 'modal-cookie' ) === -1 ) { closeParentModal( _this ); return; } removeClass( _this, 'active' ); setCookie( _this.dataset.cookie, true, 365 ); }
+                function getCookie( cname ) { var name = cname + "="; var decodedCookie = decodeURIComponent( document.cookie ); var ca = decodedCookie.split( ';' ); for ( var i = 0; i < ca.length; i++ ) { var c = ca[ i ]; while ( c.charAt( 0 ) == ' ' ) { c = c.substring( 1 ); } if ( c.indexOf( name ) == 0 ) { return c.substring( name.length, c.length ); } } return false; }
+                function setCookie( cname, cvalue, exdays ) { var d = new Date(); d.setTime( d.getTime() + ( exdays * 24 * 60 * 60 * 1000 ) ); var expires = "expires=" + d.toUTCString(); document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"; }
+                function closeAndAddCookie( e ) { e.preventDefault(); closeParentModal( e.currentTarget ); }
+                function addHandlers() { if ( !modalCookie.length ) { return; } for ( var i = 0; i < modalCookie.length; i++ ) { if ( !getCookie( modalCookie[ i ].dataset.cookie ) ) { addClass( modalCookie[ i ], 'active' ); } } for ( var i = 0; i < modalClose.length; i++ ) { modalClose[ i ].addEventListener( 'click', closeAndAddCookie ); } for ( var i = 0; i < modalButton.length; i++ ) { modalButton[ i ].addEventListener( 'click', closeAndAddCookie ); } }
+                addHandlers();
+            }
+            if ( d.readyState != 'loading' ) { cookieInit(); } else if ( d.addEventListener ) { d.addEventListener( 'DOMContentLoaded', cookieInit ); } else { d.attachEvent( 'onreadystatechange', function () { if ( d.readyState == 'interactive' ) cookieInit(); } ); }</script>
+        <script type="application/ld+json">{
+      "@context": "https://schema.org/",
+      "@type": "Organization",
+      "name": "Take Blip",
+      "image": [
+        "https://www.take.net/files/uploads/2020/09/logo-header.svg"
+      ],
+      "@id": "https://www.blip.ai/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Alameda Vicente Pinzon, 54",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "04547-130",
+        "addressCountry": "BR"
+      }
+    }</script>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./widget.css" />
+        <link rel="stylesheet" href="./home.css" />
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://www.take.net/files/themes/blank_theme/assets/img/take-og-image.png">
+        <meta property="og:title" content="Take Blip - Conversas que transformam negócios">
+        <meta property="og:description"
+            content="As soluções Take Blip de comunicação digital proporcionam contatos mais inteligentes com seus clientes. Veja o que os chatbots podem fazer!">
+        <meta property="og:url" content="https://www.take.net/">
+        <meta property="og:site_name" content="Take Blip">
+        <meta property="og:image" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:card" content="summary_large_image">
+    </head>
+
+    <body data-gtm-category="home"> <a class="skip-link screen-reader-text" href="#main-content">Pular para o
+            conteúdo</a>
+        <header class="container main-header" role="navigation">
+            <div class="content"> <a class="logo-header" href="https://www.take.net/" title="Home Take Blip"> <img
+                        src="https://www.take.net/files/uploads/2020/09/logo-header.svg" alt="Logo Take BLiP"> </a>
+                <button class="btn-burguer" role="button" aria-pressed="false"> <span class="bar1"></span> <span
+                        class="bar2"></span> <span class="bar3"></span> </button>
+                <nav class="nav">
+                    <ul class="nav__menu menu-list" role="menu">
+                        <li> <a class="menu-list__item isdropdown gtm-trc-menu" data-category="menu"
+                                data-action="clique" data-label="Soluções" href="#" title="Soluções" target=""> Soluções
+                            </a>
+                            <ul class="dropdown">
+                                <li class=""> <a class="  gtm-trc-menu" data-category="menu:submenu"
+                                        data-action="clique:link" data-label="Soluções:Soluções"
+                                        href="https://www.take.net/solucoes/" target=""
+                                        title="Soluções"><strong>Soluções</strong>
+                                        <p> Serviços flexíveis para diferentes empresas e segmentos</p>
+                                    </a></li>
+                                <li class=""> <a class="  gtm-trc-menu" data-category="menu:submenu"
+                                        data-action="clique:link" data-label="Soluções:Soluções com WhatsApp"
+                                        href="https://www.take.net/solucoes/#whatsapp" target=""
+                                        title="Soluções com WhatsApp"><strong>Soluções com WhatsApp</strong>
+                                        <p> Take Blip é provedora de solução oficial do WhatsApp</p>
+                                    </a></li>
+                                <li class=""> <a class="isdropdown isdropdown--second-level  gtm-trc-menu"
+                                        data-category="menu:submenu" data-action="clique:link"
+                                        data-label="Soluções:Por departamento na empresa" href="#" target=""
+                                        title="Por departamento na empresa"><strong>Por departamento na
+                                            empresa</strong></a>
+                                    <ul class="dropdown dropdown--second-level gtm-trc-menu"
+                                        data-category="menu:submenu" data-action="clique"
+                                        data-label="Soluções:Por departamento na empresa">
+                                        <li> <a href="https://www.take.net/solucoes/atendimento/" class="gtm-trc-menu"
+                                                data-category="menu:submenu" data-action="clique:link"
+                                                data-label="Soluções:Por departamento na empresa:Atendimento" target=""
+                                                title="Atendimento"> Atendimento </a></li>
+                                        <li> <a href="https://www.take.net/solucoes/venda/" class="gtm-trc-menu"
+                                                data-category="menu:submenu" data-action="clique:link"
+                                                data-label="Soluções:Por departamento na empresa:Vendas" target=""
+                                                title="Vendas"> Vendas </a></li>
+                                        <li> <a href="https://www.take.net/solucoes/marketing/" class="gtm-trc-menu"
+                                                data-category="menu:submenu" data-action="clique:link"
+                                                data-label="Soluções:Por departamento na empresa:Marketing" target=""
+                                                title="Marketing"> Marketing </a></li>
+                                        <li> <a href="https://www.take.net/solucoes/rh-e-corporativo/"
+                                                class="gtm-trc-menu" data-category="menu:submenu"
+                                                data-action="clique:link"
+                                                data-label="Soluções:Por departamento na empresa:RH e Corporativo"
+                                                target="" title="RH e Corporativo"> RH e Corporativo </a></li>
+                                    </ul>
+                                </li>
+                                <li class=""> <a class="isdropdown isdropdown--second-level  gtm-trc-menu"
+                                        data-category="menu:submenu" data-action="clique:link"
+                                        data-label="Soluções:Por segmento de mercado" href="#" target=""
+                                        title="Por segmento de mercado"><strong>Por segmento de mercado</strong></a>
+                                    <ul class="dropdown dropdown--second-level gtm-trc-menu"
+                                        data-category="menu:submenu" data-action="clique"
+                                        data-label="Soluções:Por segmento de mercado">
+                                        <li> <a href="https://www.take.net/solucoes/saude/" class="gtm-trc-menu"
+                                                data-category="menu:submenu" data-action="clique:link"
+                                                data-label="Soluções:Por segmento de mercado:Saúde" target=""
+                                                title="Saúde"> Saúde </a></li>
+                                        <li> <a href="https://www.take.net/solucoes/varejo/" class="gtm-trc-menu"
+                                                data-category="menu:submenu" data-action="clique:link"
+                                                data-label="Soluções:Por segmento de mercado:Varejo" target=""
+                                                title="Varejo"> Varejo </a></li>
+                                        <li> <a href="https://www.take.net/solucoes/bens-de-consumo/"
+                                                class="gtm-trc-menu" data-category="menu:submenu"
+                                                data-action="clique:link"
+                                                data-label="Soluções:Por segmento de mercado:Bens de Consumo" target=""
+                                                title="Bens de Consumo"> Bens de Consumo </a></li>
+                                        <li> <a href="https://www.take.net/solucoes/servicos-financeiros/"
+                                                class="gtm-trc-menu" data-category="menu:submenu"
+                                                data-action="clique:link"
+                                                data-label="Soluções:Por segmento de mercado:Serviços Financeiros"
+                                                target="" title="Serviços Financeiros"> Serviços Financeiros </a></li>
+                                        <li> <a href="https://www.take.net/solucoes/transporte-e-logistica/"
+                                                class="gtm-trc-menu" data-category="menu:submenu"
+                                                data-action="clique:link"
+                                                data-label="Soluções:Por segmento de mercado:Transporte e Logística"
+                                                target="" title="Transporte e Logística"> Transporte e Logística </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <a class="menu-list__item isdropdown gtm-trc-menu" data-category="menu"
+                                data-action="clique" data-label="Plataforma" href="#" title="Plataforma" target="">
+                                Plataforma </a>
+                            <ul class="dropdown">
+                                <li class=""> <a class="  gtm-trc-menu" data-category="menu:submenu"
+                                        data-action="clique:link" data-label="Plataforma:Plataforma Take Blip"
+                                        href="https://www.take.net/blip/" target=""
+                                        title="Plataforma Take Blip"><strong>Plataforma Take Blip</strong>
+                                        <p> Descubra como revolucionar a comunicação digital de sua marca em uma única
+                                            ferramenta</p>
+                                    </a></li>
+                                <li class=""> <a class="  gtm-trc-menu" data-category="menu:submenu"
+                                        data-action="clique:link" data-label="Plataforma:Integrações"
+                                        href="https://www.take.net/integracoes/" target=""
+                                        title="Integrações"><strong>Integrações</strong>
+                                        <p> Conheça nossas integrações e parceiros de tecnologia para chatbots e
+                                            contatos inteligentes</p>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li> <a class="menu-list__item  gtm-trc-menu" data-category="menu" data-action="clique"
+                                data-label="Cases" href="https://www.take.net/cases/" title="Cases" target=""> Cases
+                            </a></li>
+                        <li> <a class="menu-list__item  gtm-trc-menu" data-category="menu" data-action="clique"
+                                data-label="Preços" href="https://www.take.net/planos/" title="Preços" target=""> Preços
+                            </a></li>
+                        <li> <a class="menu-list__item isdropdown gtm-trc-menu" data-category="menu"
+                                data-action="clique" data-label="Recursos" href="#" title="Recursos" target=""> Recursos
+                            </a>
+                            <ul class="dropdown">
+                                <li class=""> <a class="  gtm-trc-menu" data-category="menu:submenu"
+                                        data-action="clique:link" data-label="Recursos:Recursos"
+                                        href="https://www.take.net/recursos/" target=""
+                                        title="Recursos"><strong>Recursos</strong>
+                                        <p> O conteúdo que você precisa: técnico e estratégico</p>
+                                    </a></li>
+                                <li class=""> <a class="  gtm-trc-menu" data-category="menu:submenu"
+                                        data-action="clique:link" data-label="Recursos:Blog Take Blip"
+                                        href="https://take.net/blog" target="" title="Blog Take Blip"><strong>Blog Take
+                                            Blip</strong>
+                                        <p> Fique por dentro das novidades sobre contatos inteligentes</p>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li> <a class="menu-list__item isdropdown gtm-trc-menu" data-category="menu"
+                                data-action="clique" data-label="Quem somos" href="#" title="Quem somos" target=""> Quem
+                                somos </a>
+                            <ul class="dropdown">
+                                <li class="dual-link"> <a class="  gtm-trc-menu" data-category="menu:submenu"
+                                        data-action="clique:link"
+                                        data-label="Quem somos:Quem somos: conheça nossa história"
+                                        href="https://www.take.net/quem-somos/" target=""
+                                        title="Quem somos: conheça nossa história"><strong>Quem somos: conheça nossa
+                                            história</strong>
+                                        <p> Conheça a história, os valores e a cultura Take Blip</p>
+                                    </a>
+                                <li class="blue-lnk"> <a href="/quem-somos/#smart-contact" class="gtm-trc-menu"
+                                        data-category="menu:submenu" data-action="clique:link"
+                                        data-label="Quem somos:Entenda o conceito de Contato Inteligente"
+                                        title="Entenda o conceito de Contato Inteligente">Entenda o conceito de Contato
+                                        Inteligente </a></li>
+                        </li>
+                        <li class="dual-link"> <a class="  gtm-trc-menu" data-category="menu:submenu"
+                                data-action="clique:link" data-label="Quem somos:Trabalhe Conosco"
+                                href="https://takeblip.gupy.io/" target="" title="Trabalhe Conosco"><strong>Trabalhe
+                                    Conosco</strong>
+                                <p> #SejaTakeBlip</p>
+                            </a>
+                        <li class="blue-lnk"> <a href="https://takeblip.gupy.io/" class="gtm-trc-menu"
+                                data-category="menu:submenu" data-action="clique:link"
+                                data-label="Quem somos:Envie seu currículo" title="Envie seu currículo">Envie seu
+                                currículo </a></li>
+                        </li>
+                        <li class="dual-link"> <a class="  gtm-trc-menu" data-category="menu:submenu"
+                                data-action="clique:link" data-label="Quem somos:Take Blip na Mídia"
+                                href="https://www.take.net/take-na-midia/" target=""
+                                title="Take Blip na Mídia"><strong>Take Blip na Mídia</strong>
+                                <p> Leia as matérias na íntegra</p>
+                            </a>
+                        <li class="blue-lnk"> <a href="https://www.take.net/take-na-midia/" class="gtm-trc-menu"
+                                data-category="menu:submenu" data-action="clique:link"
+                                data-label="Quem somos:Contato para imprensa" title="Contato para imprensa">Contato para
+                                imprensa </a></li>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                    <div class="header-actions"> <a class="header-actions__lnk-enter gtm-trc-menu" data-category="menu"
+                            data-action="clique" data-label="Entrar" href="https://portal.blip.ai/" target=""
+                            title="Entrar"> Entrar </a> <a class="header-actions__lnk-talk btn btn-primary gtm-trc-menu"
+                            data-category="menu" data-action="clique:botao" data-label="fale-com-um-especialista"
+                            href="https://www.take.net/contato/" target="" style="background-color:"
+                            title="Fale com especialistas"> Fale com especialistas </a>
+                        <div class="header-actions__language language"> <button type="button"
+                                class="language__flag isdropdown isdropdown--flag"> <img
+                                    src=https://www.take.net/files/themes/blank_theme/assets/img/icons/icon-br.svg
+                                    alt="Bandeira do Brasil"> <span>PT</span> </button>
+                            <ul class="language__list dropdown">
+                                <li class="language__flag"> <a href="https://www.take.net/en/home/"
+                                        title="Site language in English" class="language__button gtm-trc-menu"
+                                        data-category="menu" data-action="clique:dropdown" data-label="EN"> <img
+                                            src="https://www.take.net/files/themes/blank_theme/assets/img/icons/icon-en.svg"
+                                            alt="United States of America Flag"> <span>EN</span> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        <div id="main-content" role="main">
+            <div class="container carousel-home slide-1" aria-label="carousel">
+                <div class="carousel-home__list">
+                    <ul>
+                        <li class="carousel-home__list__item">
+                            <div class="content carousel-home__item"
+                                data-mobile-image="https://www.take.net/files/uploads/2020/09/Group-16.svg"
+                                data-desktop-image="https://www.take.net/files/uploads/2020/09/Group-16.svg"
+                                data-alt-image="Banner 1"
+                                data-custom-color='{"main": "#00C6D7", "el1": "#00C6D7", "el2": "#F6A722"}'>
+                                <div class="carousel-home__description">
+                                    <h1>Conversas que transformam negócios</h1>
+                                    <p>Conheça as soluções Take Blip de comunicação e experiência digital e tenha
+                                        contatos mais inteligentes com os públicos da sua empresa.</p>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div> <img src="https://www.take.net/files/uploads/2020/09/Group-16.svg" alt="Banner 1"
+                                    width="0" height="0" />
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="carousel-home__images"></div>
+                </div> <span class="carousel-home__el-1" aria-hidden="true">&nbsp;</span> <span
+                    class="carousel-home__el-2" aria-hidden="true">&nbsp;</span>
+            </div>
+            <div class="container services-cards-section">
+                <div class="content services-cards">
+                    <ul class="services-cards__list">
+                        <li class="services-cards__item">
+                            <div class="services-cards__image"> <img
+                                    src="https://www.take.net/files/uploads/2020/09/Atendimento-24h.svg"
+                                    alt="Ilustração de um headset com o texto 24h"></div>
+                            <div class="services-cards__description"> Atendimento 24 horas</div>
+                        </li>
+                        <li class="services-cards__item">
+                            <div class="services-cards__image"> <img
+                                    src="https://www.take.net/files/uploads/2020/09/smartphone-1.svg"
+                                    alt="Ilustração de um celular"></div>
+                            <div class="services-cards__description"> Vendas em apps de mensagens</div>
+                        </li>
+                        <li class="services-cards__item">
+                            <div class="services-cards__image"> <img
+                                    src="https://www.take.net/files/uploads/2020/09/WhatsApp-Logo.svg"
+                                    alt="Logo WhatsApp"></div>
+                            <div class="services-cards__description"> WhatsApp oficial para empresa</div>
+                        </li>
+                        <li class="services-cards__item">
+                            <div class="services-cards__image"> <img
+                                    src="https://www.take.net/files/uploads/2020/09/publish-bot-2.svg"
+                                    alt="Ilustração de um foguete"></div>
+                            <div class="services-cards__description"> Contato digital e jornada de clientes</div>
+                        </li>
+                        <li class="services-cards__item">
+                            <div class="services-cards__image"> <img
+                                    src="https://www.take.net/files/uploads/2020/09/robot.svg"
+                                    alt="Ilustração da cabeça de um robô"></div>
+                            <div class="services-cards__description"> Soluções de chatbot e inteligência artificial
+                            </div>
+                        </li>
+                        <li class="services-cards__item">
+                            <div class="services-cards__image"> <img
+                                    src="https://www.take.net/files/uploads/2020/09/primeiro-acesso.svg"
+                                    alt="Ilustração de um computador com avião de papel"></div>
+                            <div class="services-cards__description"> Crescimento rápido e com qualidade</div>
+                        </li>
+                        <li class="services-cards__item">
+                            <div class="services-cards__image"> <img
+                                    src="https://www.take.net/files/uploads/2020/09/megaphone-1.svg"
+                                    alt="Ilustração de um megafone"></div>
+                            <div class="services-cards__description"> Comunicação eficiente entre equipes</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container your-company-section">
+                <div class="content your-company">
+                    <div class="your-company__content">
+                        <h2 class="your-company__title">Por que Take Blip?</h2>
+                        <h4 class="your-company__subtitle">Digitalize o contato da sua empresa com quem é especialista
+                            no assunto</h4>
+                        <div class="your-company__image"> <img
+                                src="https://www.take.net/files/uploads/2020/09/Mockup-home-1.png" alt=""></div>
+                        <div class="your-company__description">
+                            <div class="your-company__block">
+                                <p>Acreditamos no poder das conversas para mudar o mundo. Oferecemos soluções
+                                    conversacionais e somos parceiros de grandes empresas. Trabalhamos unindo o melhor
+                                    em tecnologia e conhecimento humano, sempre absorvendo, antecipando e criando
+                                    tendências. Usamos nossa experiência e liderança em comunicação digital para
+                                    promover contato inteligente entre marcas e pessoas.</p>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div> <a href="https://www.take.net/blip/"
+                                class="your-company__link btn btn-secondary  gtm-trc" data-action="clique:botao"
+                                data-label="Descubra a plataforma">Descubra a plataforma</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container our-story-section">
+                <div class="content our-story">
+                    <div class="our-story__content">
+                        <div class="our-story__top-block"></div>
+                        <h2 class="our-story__main-title"> Mais de 20 anos em números</h2>
+                        <div class="our-story__cards">
+                            <div class="our-story__cards-item">
+                                <div class="item-paragraph">
+                                    <h3 class="our-story__title"> <span class="number-font">10</span> bilhões</h3>
+                                    <p class="our-story__description" role="definition"> de mensagens passaram pela
+                                        nossa plataforma em 2020</p>
+                                </div>
+                            </div>
+                            <div class="our-story__cards-item">
+                                <div class="item-paragraph">
+                                    <h3 class="our-story__title"> <span class="number-font">+100</span> mil</h3>
+                                    <p class="our-story__description" role="definition"> chatbots criados com nossa
+                                        plataforma</p>
+                                </div>
+                            </div>
+                            <div class="our-story__cards-item">
+                                <div class="item-paragraph">
+                                    <h3 class="our-story__title"> <span class="number-font">7 </span> clientes</h3>
+                                    <p class="our-story__description" role="definition"> entre as 10 marcas mais
+                                        valiosas do Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-container"> <a class="btn btn-secondary-outline gtm-trc"
+                                data-action="clique:botao" data-label="Conheça nossa história"
+                                href="https://www.take.net/quem-somos/">Conheça nossa história</a></div>
+                    </div>
+                </div>
+            </div>
+            <section class="container home-services">
+                <h3 class="solutions-figure__title">Soluções inteligentes para grandes resultados</h3>
+                <div class="services">
+                    <div class="content services__container">
+                        <div class="services__item"> <img
+                                src="https://www.take.net/files/uploads/2020/09/Oferecoa-o-melhor-atendimento.svg"
+                                alt="Ilustração de um computador" />
+                            <h2 class="solutions-figure__title"> <strong>Evolua a comunicação digital</strong></h2>
+                            <h3 class="solutions-figure__description">Estreite a relação com clientes e colaboradores.
+                                Integre as experiências com atendimento humano e automatizado em um só lugar.</h3>
+                        </div>
+                        <div class="services__item"> <img
+                                src="https://www.take.net/files/uploads/2020/09/Otimizacoaao-de-processo.svg" alt="" />
+                            <h2 class="solutions-figure__title"> <strong>Otimize processos e custos</strong></h2>
+                            <h3 class="solutions-figure__description">Faça a gestão de diferentes funções e serviços de
+                                contato da empresa, tudo na mesma plataforma. Você ganha tempo e receita.</h3>
+                        </div>
+                        <div class="services__item"> <img
+                                src="https://www.take.net/files/uploads/2020/09/Conte-com-os-maiores-apps-e-parceiros-2.svg"
+                                alt="Ilustração de um celular com ícones do WhatsApp, Facebook Messenger e Telegram" />
+                            <h2 class="solutions-figure__title"> <strong>Utilize as melhores integrações</strong></h2>
+                            <h3 class="solutions-figure__description">Faça uso dos principais canais de mensagem, como
+                                WhatsApp, ferramentas de análise de dados, Inteligência Artificial e muito mais.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="content carousel-integrations" aria-label="carousel">
+                    <ul class="integrations-list integrations-list--filterColor">
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/12/hubspotlogo-web-color.svg"
+                                    alt="Hubspot" /> <strong>Hubspot</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/12/VTEX_Cold_Gray_RGB.svg"
+                                    alt="Vtex" /> <strong>Vtex</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/business-chat-2.svg"
+                                    alt="Apple Business Chat" /> <strong>Apple Business Chat</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/webhook-1.svg"
+                                    alt="Webhook de Atendimento" /> <strong>Webhook de Atendimento</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/Luis-1.svg" alt="Microsoft Luis" />
+                                <strong>Microsoft Luis</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/salesforce-1.svg"
+                                    alt="Live Agent do SalesForce" /> <strong>Live Agent do SalesForce</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/BLiP-2.svg" alt="Blip Desk" />
+                                <strong>Blip Desk</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/watson_white.svg"
+                                    alt="IBM Watson" /> <strong>IBM Watson</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/dialogflow-1.svg"
+                                    alt="Dialog Flow" /> <strong>Dialog Flow</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/RD-1.svg" alt="RD Station" />
+                                <strong>RD Station</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/dashbot-1.svg" alt="Dashbot" />
+                                <strong>Dashbot</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/chatbase-1.svg" alt="Chatbase" />
+                                <strong>Chatbase</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/bot-analytics-1.svg"
+                                    alt="Botanalytics" /> <strong>Botanalytics</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/workplace-1.svg"
+                                    alt="Workplace Chat" /> <strong>Workplace Chat</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/sms-1.svg" alt="SMS" />
+                                <strong>SMS</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/Google_Messages_logo-1.svg"
+                                    alt="Google RCS" /> <strong>Google RCS</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/BLiP-3.svg" alt="Blip Chat" />
+                                <strong>Blip Chat</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/Microsoft_Office_Teams_2018–present-1.svg"
+                                    alt="Microsoft Teams" /> <strong>Microsoft Teams</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/email-1.svg" alt="E-mail" />
+                                <strong>E-mail</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/messenger-4.svg"
+                                    alt="Facebook Messenger" /> <strong>Facebook Messenger</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/telegram-2.svg" alt="Telegram" />
+                                <strong>Telegram</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/09/google-assistant.svg"
+                                    alt="Google Assistant" /> <strong>Google Assistant</strong></div>
+                        </li>
+                        <li>
+                            <div class="integrations-list__item"> <img
+                                    src="https://www.take.net/files/uploads/2020/08/whatsapp-3.svg" alt="WhatsApp" />
+                                <strong>WhatsApp</strong></div>
+                        </li>
+                    </ul><a class="btn btn-primary gtm-trc" data-action="clique:botao"
+                        data-label="Conheça todas as integrações" href="https://www.take.net/integracoes/"
+                        title="Conheça todas as integrações"> Conheça todas as integrações </a>
+                </div>
+            </section>
+            <div class="container home-cases">
+                <div class="content" aria-label="carousel">
+                    <h2 class="home-cases__main-title">Take Blip se adapta a seu negócio. Conheça nossos cases de
+                        sucesso.</h2>
+                    <ul class="related-lista">
+                        <li class="card-item">
+                            <h4 class="home-cases__card-title"><strong>Atendimento</strong></h4>
+                            <p class="home-cases__card-text text-top">Contato otimizado com clientes no WhatsApp Oficial
+                                para empresas</p>
+                            <h4 class="home-cases__card-title"><strong>+80</strong><span>milhões</span></h4>
+                            <p class="home-cases__card-text"> de mensagens trocadas na primeira promoção via WhatsApp da
+                                assistente virtual KORA</p> <img
+                                src="https://www.take.net/files/uploads/2020/07/logo-coca-1.png" alt="Logo Coca Cola" />
+                        </li>
+                        <li class="card-item">
+                            <h4 class="home-cases__card-title"><strong>Vendas</strong></h4>
+                            <p class="home-cases__card-text text-top">Pagamento e comunicação integrados, direto nos
+                                aplicativos de mensagem</p>
+                            <h4 class="home-cases__card-title"><strong>+58</strong><span>mil</span></h4>
+                            <p class="home-cases__card-text">clientes engajados na conversa com a marca</p> <img
+                                src="https://www.take.net/files/uploads/2020/09/CasasBahia-1-e1600387167852.png"
+                                alt="" />
+                        </li>
+                        <li class="card-item">
+                            <h4 class="home-cases__card-title"><strong>Marketing</strong></h4>
+                            <p class="home-cases__card-text text-top">Maior alcance e engajamento em ações e
+                                relacionamento de marca</p>
+                            <h4 class="home-cases__card-title"><strong>+64</strong><span>mil</span></h4>
+                            <p class="home-cases__card-text"> "gelatos elegantes" enviados em ação com a plataforma Take
+                                Blip</p> <img src="https://www.take.net/files/uploads/2020/09/BACIODILATTE.png"
+                                alt="Logo Bacio di Latte" />
+                        </li>
+                        <li class="card-item">
+                            <h4 class="home-cases__card-title"><strong>RH e Corporativo</strong></h4>
+                            <p class="home-cases__card-text text-top">Transformação digital e comunicação eficiente
+                                entre equipes e departamentos</p>
+                            <h4 class="home-cases__card-title"><strong>+2</strong><span>milhões</span></h4>
+                            <p class="home-cases__card-text">de livros baixados no WhatsApp durante a ação</p> <img
+                                src="https://www.take.net/files/uploads/2020/09/ITAU-e1600380941941.png" alt="" />
+                        </li>
+                    </ul> <a href="https://www.take.net/solucoes/" class="btn btn-primary gtm-trc"
+                        data-action="clique:botao" data-label="Veja todas as soluções">Veja todas as soluções</a>
+                </div>
+            </div>
+            <div class="container home-links">
+                <div class="content">
+                    <div class="home-links__content">
+                        <div class="home-links__cards">
+                            <div class="home-links__block-item">
+                                <div class="home-links__cards-item"> <img class="home-links__image"
+                                        src="https://www.take.net/files/uploads/2020/09/o-conteudo-que-voce-precisa-da-estrategia-a-comunicacao.svg"
+                                        alt="Ilustração de um homem sentado em uma mesa com um computador e um café" />
+                                    <div>
+                                        <h3 class="home-links__title">Recursos</h3>
+                                        <p class="home-links__description">O conteúdo que você precisa, de técnico a
+                                            estratégico</p> <a class="simple-link gtm-trc" data-action="clique:link"
+                                            data-label="Confira nossos Recursos"
+                                            href="https://www.take.net/recursos/">Confira nossos Recursos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-links__block-item">
+                                <div class="home-links__cards-item"> <img class="home-links__image"
+                                        src="https://www.take.net/files/uploads/2020/09/Apps-e-parceiros-1.svg"
+                                        alt="Ilustração de uma mulher sentada em um pufe segurando um tablet" />
+                                    <div>
+                                        <h3 class="home-links__title">Blog</h3>
+                                        <p class="home-links__description">Novidades sobre chatbots, inovação,
+                                            tecnologia e muito mais</p> <a class="simple-link gtm-trc"
+                                            data-action="clique:link" data-label="Conheça nosso blog"
+                                            href="https://take.net/blog">Conheça nosso blog</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container main-footer" role="navigation">
+            <div class="content">
+                <section class="site-map">
+                    <div class="site-map__block">
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> <a href="https://www.take.net/solucoes/" class="gtm-trc-footer"
+                                    data-category="footer" data-action="clique" data-label="Soluções"
+                                    title="Soluções">Soluções</a></h5>
+                        </div>
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> <a href="https://www.take.net/solucoes/#whatsapp"
+                                    class="gtm-trc-footer" data-category="footer" data-action="clique"
+                                    data-label="Soluções com WhatsApp" title="Soluções com WhatsApp">Soluções com
+                                    WhatsApp</a></h5>
+                        </div>
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> Por departamento na empresa</h5>
+                            <ul class="list">
+                                <li class="list__item"><a href="https://www.take.net/solucoes/atendimento/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Por departamento na empresa:Atendimento" title="Atendimento">
+                                        Atendimento </a></li>
+                                <li class="list__item"><a href="https://www.take.net/solucoes/venda/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Por departamento na empresa:Vendas" title="Vendas"> Vendas </a></li>
+                                <li class="list__item"><a href="https://www.take.net/solucoes/marketing/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Por departamento na empresa:Marketing" title="Marketing"> Marketing
+                                    </a></li>
+                                <li class="list__item"><a href="https://www.take.net/solucoes/rh-e-corporativo/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Por departamento na empresa:RH e Corporativo"
+                                        title="RH e Corporativo"> RH e Corporativo </a></li>
+                            </ul>
+                        </div>
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> Por segmento de mercado</h5>
+                            <ul class="list">
+                                <li class="list__item"><a href="https://www.take.net/solucoes/saude/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Por segmento de mercado:Saúde" title="Saúde"> Saúde </a></li>
+                                <li class="list__item"><a href="https://www.take.net/solucoes/varejo/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Por segmento de mercado:Varejo" title="Varejo"> Varejo </a></li>
+                                <li class="list__item"><a href="https://www.take.net/solucoes/bens-de-consumo/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Por segmento de mercado:Bens de Consumo" title="Bens de Consumo">
+                                        Bens de Consumo </a></li>
+                                <li class="list__item"><a href="https://www.take.net/solucoes/servicos-financeiros/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Por segmento de mercado:Serviços Financeiros"
+                                        title="Serviços Financeiros"> Serviços Financeiros </a></li>
+                                <li class="list__item"><a href="https://www.take.net/solucoes/transporte-e-logistica/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Por segmento de mercado:Transporte e Logistica"
+                                        title="Transporte e Logistica"> Transporte e Logistica </a></li>
+                            </ul>
+                        </div>
+                        <div class="site-map__content"></div>
+                    </div>
+                    <div class="site-map__block">
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> <a href="https://www.take.net/blip/" class="gtm-trc-footer"
+                                    data-category="footer" data-action="clique" data-label="Plataforma Take Blip"
+                                    title="Plataforma Take Blip">Plataforma Take Blip</a></h5>
+                            <ul class="list">
+                                <li class="list__item"><a href="https://www.take.net/integracoes/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Plataforma Take Blip:Integrações" title="Integrações"> Integrações
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> <a href="https://www.take.net/recursos/" class="gtm-trc-footer"
+                                    data-category="footer" data-action="clique" data-label="Recursos"
+                                    title="Recursos">Recursos</a></h5>
+                            <ul class="list">
+                                <li class="list__item"><a href="https://www.take.net/recursos/" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Recursos:Estratégia e Negócios" title="Estratégia e Negócios">
+                                        Estratégia e Negócios </a></li>
+                                <li class="list__item"><a href="https://take.net/blog/" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Recursos:Blog Take Blip" title="Blog Take Blip"> Blog Take Blip </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> Materiais da Plataforma</h5>
+                            <ul class="list">
+                                <li class="list__item"><a href="https://docs.blip.ai/" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Materiais da Plataforma:Documentação" title="Documentação">
+                                        Documentação </a></li>
+                                <li class="list__item"><a href="https://help.blip.ai/hc/pt-br" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Materiais da Plataforma:Help Center" title="Help Center"> Help
+                                        Center </a></li>
+                                <li class="list__item"><a href="https://learn.take.net/" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Materiais da Plataforma:Learn Center" title="Learn Center"> Learn
+                                        Center </a></li>
+                                <li class="list__item"><a href="https://desk.blip.ai/" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Materiais da Plataforma:Blip Desk" title="Blip Desk"> Blip Desk </a>
+                                </li>
+                                <li class="list__item"><a href="https://forum.blip.ai/" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Materiais da Plataforma:Blip Forum" title="Blip Forum"> Blip Forum
+                                    </a></li>
+                                <li class="list__item"><a href="https://ideas.blip.ai/" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Materiais da Plataforma:Blip Ideas" title="Blip Ideas"> Blip Ideas
+                                    </a></li>
+                                <li class="list__item"><a href="https://status.blip.ai/" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Materiais da Plataforma:Blip Status" title="Blip Status"> Blip
+                                        Status </a></li>
+                            </ul>
+                        </div>
+                        <div class="site-map__content"></div>
+                    </div>
+                    <div class="site-map__block">
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> <a href="https://www.take.net/cases/" class="gtm-trc-footer"
+                                    data-category="footer" data-action="clique" data-label="Cases"
+                                    title="Cases">Cases</a></h5>
+                        </div>
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> <a href="https://www.take.net/planos/" class="gtm-trc-footer"
+                                    data-category="footer" data-action="clique" data-label="Preços"
+                                    title="Preços">Preços</a></h5>
+                        </div>
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> <a href="https://www.take.net/quem-somos/"
+                                    class="gtm-trc-footer" data-category="footer" data-action="clique"
+                                    data-label="Quem somos" title="Quem somos">Quem somos</a></h5>
+                            <ul class="list">
+                                <li class="list__item"><a href="https://takeblip.gupy.io/" class="gtm-trc-footer"
+                                        data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Quem somos:Trabalhe conosco" title="Trabalhe conosco"> Trabalhe
+                                        conosco </a></li>
+                                <li class="list__item"><a href="https://www.take.net/take-na-midia/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Quem somos:Take Blip na mídia" title="Take Blip na mídia"> Take Blip
+                                        na mídia </a></li>
+                            </ul>
+                        </div>
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> Segurança</h5>
+                            <ul class="list">
+                                <li class="list__item"><a href="https://www.take.net/politica-de-privacidade/"
+                                        class="gtm-trc-footer" data-category="footer:submenu" data-action="clique:link"
+                                        data-label="Segurança:Políticas de Privacidade"
+                                        title="Políticas de Privacidade"> Políticas de Privacidade </a></li>
+                            </ul>
+                        </div>
+                        <div class="site-map__content"></div>
+                    </div>
+                    <div class="site-map__block">
+                        <div class="site-map__content">
+                            <h5 class="site-map__title"> Assine a Newsletter e fique por dentro das novidades</h5>
+                        </div>
+                        <!--[if lte IE 8]> <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js" defer="defer"></script> <![endif]-->
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"
+                            defer="defer"></script>
+                        <script>var hbsptTimer = setInterval( function ()
+                            {
+                                if ( typeof ( hbspt ) === 'object' )
+                                {
+                                    hbspt.forms.create( {
+                                        portalId: "1796841",
+                                        formId: "acae0cb4-4a28-4ffc-92fc-b45d4abf242d"
+                                    } );
+                                    clearInterval( hbsptTimer )
+                                }
+                            }, 300 )</script>
+                    </div>
+                </section>
+                <nav class="social-media">
+                    <div class="social-media__logo"> <img
+                            src="https://www.take.net/files/uploads/2020/09/logo-footer.svg" alt="Take Logo"></div>
+                    <ul class="social-media__icons">
+                        <li> <a href="https://twitter.com/takeblip" class="gtm-trc-footer" data-categoty="footer"
+                                data-action="click:icone" data-label="twitter" aria-label="twitter - nova janela"
+                                target="_blank"> <img src="https://www.take.net/files/uploads/2020/10/ico-twitter.svg"
+                                    alt="Logo Twitter"> </a></li>
+                        <li> <a href="https://www.facebook.com/takeblip/" class="gtm-trc-footer" data-categoty="footer"
+                                data-action="click:icone" data-label="facebook" aria-label="facebook - nova janela"
+                                target="_blank"> <img src="https://www.take.net/files/uploads/2020/10/ico-facebook.svg"
+                                    alt="Logo Facebook"> </a></li>
+                        <li> <a href="https://www.linkedin.com/company/takeblip/" class="gtm-trc-footer"
+                                data-categoty="footer" data-action="click:icone" data-label="linkedin"
+                                aria-label="linkedin - nova janela" target="_blank"> <img
+                                    src="https://www.take.net/files/uploads/2020/10/ico-linkedin.svg"
+                                    alt="Logo Linkedin"> </a></li>
+                        <li> <a href="https://www.instagram.com/takeblip/" class="gtm-trc-footer" data-categoty="footer"
+                                data-action="click:icone" data-label="instagram" aria-label="instagram - nova janela"
+                                target="_blank"> <img src="https://www.take.net/files/uploads/2020/10/ico-instagram.svg"
+                                    alt="Logo Instagram"> </a></li>
+                        <li> <a href="https://www.youtube.com/talktotake" class="gtm-trc-footer" data-categoty="footer"
+                                data-action="click:icone" data-label="youtube" aria-label="youtube - nova janela"
+                                target="_blank"> <img src="https://www.take.net/files/uploads/2020/10/ico-youtube.svg"
+                                    alt="Logo Youtube"> </a></li>
+                    </ul>
+                    <address class="social-media__address">R. Sergipe. 1440 - Savassi - Belo Horizonte - MG | Alameda
+                        Vicente Pinzon, 54 - Vila Olímpia - São Paulo - SP</address>
+                </nav>
+            </div>
+        </footer>
+        <div class="container">
+            <div class="modal modal--no-overlay modal-cookie" data-type="cookie" data-cookie="cookie-wall">
+                <div class="modal__wrapper modal__wrapper--cookie">
+                    <div class="top-info-content"> <img
+                            src="https://www.take.net/files/uploads/2020/10/logo-modal-cookies.svg" alt="Cookie Wall">
+                        <div>
+                            <h2>Cookie Wall</h2>
+                            <p>Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência com o
+                                nosso site. Ao navegar pelas páginas, você declara estar de acordo com a nossa Política
+                                de Privacidade. Para mais informações, entre em contato através do e-mail <a
+                                    href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="bcd0d9dbddd0fcded0d5cc92ddd592">[email&#160;protected]</a></p>
+                        </div>
+                        <div class="btn-block-content"> <a href="#" class="modal-cookie_button" title="Ok, entendi">Ok,
+                                entendi</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="https://www.take.net/files/themes/blank_theme/assets/js/home.js?v=km2ex44x" defer="defer"></script>
+        <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2GGK3H" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe> </noscript>
+        <script>if ( window.location.hostname !== 'localhost' )
+            {
+                ( function ( w, d, s, l, i )
+                {
+                    w[ l ] = w[ l ] || []; w[ l ].push( {
+                        'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                    } ); var f = d.getElementsByTagName( s )[ 0 ],
+                        j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore( j, f );
+                } )( window, document, 'script', 'dataLayer', 'GTM-P2GGK3H' );
+            } else
+            {
+                dataLayer = []
+                dataLayer.prototype = Array.prototype
+                dataLayer.prototype.add = Array.prototype.push
+                dataLayer.push = function ( obj ) { this.add( obj ); console.log( obj ); console.log( this ) }
+            }</script>
+        <script src="https://www.take.net/files/themes/blank_theme/assets/js/widget.js?v=km2ex44x"></script>
+    </body>
+
+</html>

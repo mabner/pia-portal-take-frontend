@@ -1,0 +1,74 @@
+.message-bubble {
+	font-family: Nunito Sans, sans-serif;
+	display: flex;
+	flex-flow: row wrap;
+	position: fixed;
+	background: #fff;
+	color: #909ba9;
+	right: 110px;
+	max-width: 230px;
+	bottom: 60px;
+	padding: 12px 12px;
+	border-radius: 13px 13px 2px 13px;
+	box-shadow: 1px -1px 9px rgba(0, 0, 0, 0.75);
+	z-index: 2;
+	animation: toggle-bubble 0.5s ease-out;
+	margin-left: 15px;
+}
+.message-bubble::after {
+	bottom: 0;
+	content: '';
+	position: absolute;
+	left: calc(100% - 15px);
+	width: 0;
+	border: 14px solid transparent;
+	border-bottom-color: #fff;
+	border-radius: 4.5px;
+}
+.message-bubble::before {
+	bottom: 0;
+	content: '';
+	position: absolute;
+	left: calc(100% - 12px);
+	width: 0;
+	border: 15px solid transparent;
+	border-bottom-color: rgba(0, 0, 0, 0.25);
+	filter: blur(1px);
+	border-radius: 4.5px;
+}
+@-moz-keyframes toggle-bubble {
+	from {
+		right: 0;
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes toggle-bubble {
+	from {
+		right: 0;
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-o-keyframes toggle-bubble {
+	from {
+		right: 0;
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes toggle-bubble {
+	from {
+		right: 0;
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
