@@ -8,7 +8,7 @@ const headerProps = {
 	subtitle: 'Cadastro de ferramentas: Incluir, Listar, Alterar e Excluir.',
 };
 
-const baseUrl = 'http://localhost:3001/tools';
+const baseUrl = 'https://pia-portal-take-backend.vercel.app:3001/tools';
 const initialState = {
 	tools: { name: '', description: '', usage: '' },
 	list: [],
