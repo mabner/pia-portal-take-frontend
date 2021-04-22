@@ -9,16 +9,16 @@ import { BrowserRouter } from 'react-router-dom';
 export default () => (
 	<BrowserRouter>
 		<div className="app">
-			<div id="logo-container">
-				<img src={logo} alt="blip logo" id="logo" />
+			<div id="login-logo-container">
+				<img src={logo} alt="blip logo" id="login-logo" />
 			</div>
 
-			<div id="btn-container">
+			<div id="login-btn-container">
 				<p>
 					<button
 						className="btn-github"
 						type="button"
-						onClick={() => window.open('auth/github')}
+						onClick={() => window.open('auth/github', '_top')}
 					>
 						Entrar com Github
 					</button>
