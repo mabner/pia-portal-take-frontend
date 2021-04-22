@@ -10,7 +10,7 @@ const headerProps = {
 
 const baseUrl = 'http://localhost:3001/tools';
 const initialState = {
-	tools: { name: '', description: '', usage: '' },
+	tools: { name: '', description: '', usage: '', tURL: '' },
 	list: [],
 };
 
@@ -101,6 +101,19 @@ export default class ToolsCrud extends Component {
 							/>
 						</div>
 					</div>
+					<div className="col-12 col-md-6">
+						<div className="form-group">
+							<label>URL</label>
+							<input
+								type="text"
+								className="form-control"
+								name="url"
+								value={this.state.tools.tURL}
+								onChange={(event) => this.updateField(event)}
+								placeholder="Digite a URL da ferramenta..."
+							/>
+						</div>
+					</div>
 				</div>
 				<hr />
 				<div className="row">
@@ -148,6 +161,7 @@ export default class ToolsCrud extends Component {
 						<th>Nome</th>
 						<th>Descrição</th>
 						<th>Tema</th>
+						<th>URL</th>
 					</tr>
 				</thead>
 				<tbody>{this.renderRow()}</tbody>
@@ -164,13 +178,18 @@ export default class ToolsCrud extends Component {
 					<td>{tools.name}</td>
 					<td>{tools.description}</td>
 					<td>{tools.usage}</td>
+					<td>{tools.tURL}</td>
 					<td>
-						<button className="btn btn-warning"
-						onClick={() => this.load(tools)}>
+						<button
+							className="btn btn-warning"
+							onClick={() => this.load(tools)}
+						>
 							<i className="fas fa-pencil-alt"></i>
 						</button>
-						<button className="btn btn-danger ml-2"
-						onClick={() => this.remove(tools)}>
+						<button
+							className="btn btn-danger ml-2"
+							onClick={() => this.remove(tools)}
+						>
 							<i className="fas fa-trash"></i>
 						</button>
 					</td>
