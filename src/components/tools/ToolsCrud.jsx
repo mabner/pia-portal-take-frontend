@@ -107,7 +107,7 @@ export default class ToolsCrud extends Component {
 							<input
 								type="text"
 								className="form-control"
-								name="url"
+								name="tURL"
 								value={this.state.tools.tURL}
 								onChange={(event) => this.updateField(event)}
 								placeholder="Digite a URL da ferramenta..."
