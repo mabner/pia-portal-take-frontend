@@ -2,13 +2,15 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import Main from '../template/Main';
 
+require('dotenv').config();
+
 const headerProps = {
 	icon: 'tools',
 	title: 'Ferramentas',
 	subtitle: 'Cadastro de ferramentas: Incluir, Listar, Alterar e Excluir.',
 };
 
-const baseUrl = 'http://localhost:3001/tools';
+const baseUrl = process.env.BASE_URL;
 const initialState = {
 	tools: { name: '', description: '', usage: '', tURL: '' },
 	list: [],
