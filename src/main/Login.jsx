@@ -18,7 +18,7 @@ export default () => (
 					<button
 						className="btn-github"
 						type="button"
-						onClick="location.href='auth/github'"
+						onClick={() => window.open('auth/github')}
 					>
 						Entrar com Github
 					</button>
