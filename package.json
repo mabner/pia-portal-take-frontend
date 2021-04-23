@@ -3,17 +3,8 @@
   "version": "0.1.0",
   "description": "Repositório para o trabalho de PIA (Parte do Frontend)",
   "main": "index.js",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mabner/pia-portal-take-frontend.git"
-  },
   "author": "Marcos Leite",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mabner/pia-portal-take-frontend/issues"
-  },
-  "homepage": "https://github.com/mabner/pia-portal-take-frontend#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@testing-library/jest-dom": "^5.11.10",
