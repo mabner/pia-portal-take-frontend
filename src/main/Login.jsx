@@ -10,7 +10,7 @@ export default () => (
 	<BrowserRouter>
 		<div className="app">
 			<div id="login-logo-container">
-				<img src={logo} alt="blip logo" id="login-logo" />
+				<img src={ logo } alt="blip logo" id="login-logo" />
 			</div>
 
 			<div id="login-btn-container">
@@ -18,8 +18,7 @@ export default () => (
 					<button
 						className="btn-github"
 						type="button"
-						onClick={() => window.open('auth/github', '_top')}
-					>
+						onClick={ () => window.open( 'auth/github', '_top' ) }>
 						Entrar com Github
 					</button>
 				</p>

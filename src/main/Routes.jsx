@@ -10,6 +10,6 @@ export default () => (
 		<Route exact path="/" component={Home} />
 		<Route path="/tools" component={ToolsCrud} />
 		<Route path="/login" component={Login} />
-		<Redirect from="*" to="/" />
+		{/* <Redirect from="*" to="/" /> */ }
 	</Switch>
 );

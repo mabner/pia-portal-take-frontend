@@ -2,65 +2,71 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import Main from '../template/Main';
 
-require('dotenv').config();
-
 const headerProps = {
 	icon: 'tools',
 	title: 'Ferramentas',
 	subtitle: 'Cadastro de ferramentas: Incluir, Listar, Alterar e Excluir.',
 };
 
-const baseUrl = process.env.BASE_URL;
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const initialState = {
-	tools: { name: '', description: '', usage: '', tURL: '' },
+	tools: { _id: '', name: '', description: '', usage: '', tURL: '' },
 	list: [],
 };
-
-export default class ToolsCrud extends Component {
+export default class ToolsCrud extends Component
+{
 	state = { ...initialState };
 
 	// Function will be called when the component is to be shown in the screen
-	componentWillMount() {
-		axios(baseUrl).then((resp) => {
-			this.setState({ list: resp.data });
-		});
+	componentWillMount ()
+	{
+		axios( BASE_URL ).then( ( resp ) =>
+		{
+			this.setState( { list: resp.data } );
+		} );
 	}
 
 	// Clears the form
-	clear() {
-		this.setState({ tools: initialState.tools });
+	clear ()
+	{
+		this.setState( { tools: initialState.tools } );
 	}
 
 	// Saves new tools or alters existing one
-	save() {
+	save ()
+	{
 		const tools = this.state.tools;
 
 		// If tool has valid ID then PUT, no ID do a POST (new record)
-		const method = tools.id ? 'put' : 'post';
+		const method = tools._id ? 'put' : 'post';
 
 		// PUT URL : POST URL
-		const url = tools.id ? `${baseUrl}/${tools.id}` : baseUrl;
-		axios[method](url, tools).then((resp) => {
+		const url = tools._id ? `${ BASE_URL }/${ tools._id }` : BASE_URL;
+		axios[ method ]( url, tools ).then( ( resp ) =>
+		{
 			// resp.data returns the data returned from the webservice (our json server)
-			const list = this.getUpdatedList(resp.data);
-			this.setState({ tools: initialState.tools, list });
-		});
+			const list = this.getUpdatedList( resp.data );
+			this.setState( { tools: initialState.tools, list } );
+		} );
 	}
 
-	getUpdatedList(tools, add = true) {
-		const list = this.state.list.filter((t) => t.id !== tools.id);
-		if (add) list.unshift(tools);
+	getUpdatedList ( tools, add = true )
+	{
+		const list = this.state.list.filter( ( t ) => t._id !== tools._id );
+		if ( add ) list.unshift( tools );
 		return list;
 	}
 
-	updateField(event) {
+	updateField ( event )
+	{
 		// Clones the tool with a spread operator
 		const tools = { ...this.state.tools };
-		tools[event.target.name] = event.target.value;
-		this.setState({ tools });
+		tools[ event.target.name ] = event.target.value;
+		this.setState( { tools } );
 	}
 
-	renderForm() {
+	renderForm ()
+	{
 		return (
 			<div className="form">
 				<div className="row">
@@ -71,8 +77,8 @@ export default class ToolsCrud extends Component {
 								type="text"
 								className="form-control"
 								name="name"
-								value={this.state.tools.name}
-								onChange={(event) => this.updateField(event)}
+								value={ this.state.tools.name }
+								onChange={ ( event ) => this.updateField( event ) }
 								placeholder="Digite o nome da ferramenta..."
 							/>
 						</div>
@@ -84,8 +90,8 @@ export default class ToolsCrud extends Component {
 								type="text"
 								className="form-control"
 								name="description"
-								value={this.state.tools.description}
-								onChange={(event) => this.updateField(event)}
+								value={ this.state.tools.description }
+								onChange={ ( event ) => this.updateField( event ) }
 								placeholder="Digite uma descrição para a ferramenta..."
 							/>
 						</div>
@@ -97,8 +103,8 @@ export default class ToolsCrud extends Component {
 								type="text"
 								className="form-control"
 								name="usage"
-								value={this.state.tools.usage}
-								onChange={(event) => this.updateField(event)}
+								value={ this.state.tools.usage }
+								onChange={ ( event ) => this.updateField( event ) }
 								placeholder="Digite o tema da ferramenta..."
 							/>
 						</div>
@@ -110,8 +116,8 @@ export default class ToolsCrud extends Component {
 								type="text"
 								className="form-control"
 								name="tURL"
-								value={this.state.tools.tURL}
-								onChange={(event) => this.updateField(event)}
+								value={ this.state.tools.tURL }
+								onChange={ ( event ) => this.updateField( event ) }
 								placeholder="Digite a URL da ferramenta..."
 							/>
 						</div>
@@ -123,7 +129,7 @@ export default class ToolsCrud extends Component {
 						<button
 							className="btn btn-success"
 							// @ts-ignore
-							onClick={(event) => this.save(event)}
+							onClick={ ( event ) => this.save( event ) }
 						>
 							Salvar
 						</button>
@@ -131,7 +137,7 @@ export default class ToolsCrud extends Component {
 						<button
 							className="btn btn-secondary ml-2"
 							// @ts-ignore
-							onClick={(event) => this.clear(event)}
+							onClick={ ( event ) => this.clear( event ) }
 						>
 							Cancelar
 						</button>
@@ -142,16 +148,18 @@ export default class ToolsCrud extends Component {
 	}
 
 	// Updates the tools state
-	load(tools) {
-		this.setState({ tools });
+	load ( tools )
+	{
+		this.setState( { tools } );
 	}
 
-	remove(tools) {
-		// @ts-ignore
-		axios.delete(`${baseUrl}/${tools.id}`).then((resp) => {
-			const list = this.getUpdatedList(tools, false);
-			this.setState({ list });
-		});
+	remove ( tool )
+	{
+		axios.delete( `${ BASE_URL }/${ tool._id }` ).then( ( resp ) =>
+		{
+			const list = this.getUpdatedList( tool, false );
+			this.setState( { list } );
+		} );
 	}
 
 	renderTable ()
@@ -166,7 +174,7 @@ export default class ToolsCrud extends Component {
 						<th>URL</th>
 					</tr>
 				</thead>
-				<tbody>{this.renderRow()}</tbody>
+				<tbody>{ this.renderRow() }</tbody>
 			</table>
 		);
 	}
@@ -176,35 +184,36 @@ export default class ToolsCrud extends Component {
 		return this.state.list.map( tools =>
 		{
 			return (
-				<tr key={tools.id}>
-					<td>{tools.name}</td>
-					<td>{tools.description}</td>
-					<td>{tools.usage}</td>
-					<td>{tools.tURL}</td>
+				<tr key={ tools._id } >
+					<td>{ tools.name }</td>
+					<td>{ tools.description }</td>
+					<td>{ tools.usage }</td>
+					<td>{ tools.tURL }</td>
 					<td>
 						<button
 							className="btn btn-warning"
-							onClick={() => this.load(tools)}
+							onClick={ () => this.load( tools ) }
 						>
 							<i className="fas fa-pencil-alt"></i>
 						</button>
 						<button
 							className="btn btn-danger ml-2"
-							onClick={() => this.remove(tools)}
+							onClick={ () => this.remove( tools ) }
 						>
 							<i className="fas fa-trash"></i>
 						</button>
 					</td>
 				</tr>
 			);
-		})
+		} );
 	}
 
-	render() {
+	render ()
+	{
 		return (
-		<Main {...headerProps}>
-				{this.renderForm() }
-				{this.renderTable()}
-		</Main>);
+			<Main { ...headerProps }>
+				{ this.renderForm() }
+				{ this.renderTable() }
+			</Main> );
 	}
 }
