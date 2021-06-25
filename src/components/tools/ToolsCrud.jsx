@@ -10,7 +10,7 @@ const headerProps = {
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 const initialState = {
-	tools: { _id: '', name: '', description: '', usage: '', tURL: '' },
+	tools: { name: '', description: '', usage: '', tURL: '' },
 	list: [],
 };
 export default class ToolsCrud extends Component {
@@ -38,7 +38,7 @@ export default class ToolsCrud extends Component {
 		// PUT URL : POST URL
 		const url = tools._id ? `${BASE_URL}/${tools._id}` : BASE_URL;
 		axios[method](url, tools).then((resp) => {
-			// resp.data returns the data returned from the webservice (our json server)
+			// resp.data returns the data returned from the webservice
 			const list = this.getUpdatedList(resp.data);
 			this.setState({ tools: initialState.tools, list });
 		});
