@@ -10,8 +10,17 @@ export default (
 		API Rest e Jupyter Notebooks em um só lugar. Com mapa de ferramentas
 		catalogadas para facilmente encontrar o que precisa." />
 		<h1 className="mt-3">
-			<i className={`fas fa-${props.icon}`}></i> {props.title}
+			<i className={ `fas fa-${ props.icon }` }></i> { props.title }
 		</h1>
-		<p className="lead text-muted">{props.subtitle}</p>
+		<p className="lead text-muted">{ props.subtitle }</p>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-199987882-1">
+		</script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){ dataLayer.push( arguments );}
+			gtag('js', new Date());
+			gtag('config', 'UA-199987882-1');
+		</script>
 	</header>
 );
