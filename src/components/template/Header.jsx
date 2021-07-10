@@ -13,15 +13,5 @@ export default (
 			<i className={ `fas fa-${ props.icon }` }></i> { props.title }
 		</h1>
 		<p className="lead text-muted">{ props.subtitle }</p>
-
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-199987882-1">
-		</script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){ dataLayer.push( arguments );}
-			gtag('js', new Date());
-			gtag('config', 'UA-199987882-1');
-		</script>
-
 	</header>
 );
