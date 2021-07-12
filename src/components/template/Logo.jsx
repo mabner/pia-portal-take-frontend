@@ -1,14 +1,12 @@
 import './Logo.css';
 import React from 'react';
-// @ts-ignore
-import logo from '../../assets/images/logo.svg';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-
-export default () => (
+const logo = () => (
 	<aside className="logo">
 		<Link to="/" className="logo">
-			<img src={logo} alt="Take Blip" />
+			<img src={logo} alt="Take Blip"/>
 		</Link>
 	</aside>
 );
+export default logo;

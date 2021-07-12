@@ -1,18 +1,18 @@
 aside.logo {
-	background-color: #1d1d1d;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* box-shadow: var(--shadow); */
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: var(--shadow); */
 }
 
 aside.logo img {
-	padding: 0px 15px;
-	width: 100%;
+    padding: 0 15px;
+    width: 100%;
 }
 
-@media(max-width: 576px) {
-	aside.logo img {
-		width: 200px;
-	}
+@media (max-width: 576px) {
+    aside.logo img {
+        width: 200px;
+    }
 }

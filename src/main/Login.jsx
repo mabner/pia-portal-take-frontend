@@ -4,13 +4,14 @@ import logo from '../assets/images/logo-header.svg';
 import './Login.css';
 
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
-export default () => (
+
+const login = () => (
 	<BrowserRouter>
 		<div className="app">
 			<div id="login-logo-container">
-				<img src={ logo } alt="blip logo" id="login-logo" />
+				<img src={logo} alt="Blip logo" id="login-logo"/>
 			</div>
 
 			<div id="login-btn-container">
@@ -18,7 +19,7 @@ export default () => (
 					<button
 						className="btn-github"
 						type="button"
-						onClick={ () => window.open( 'auth/github', '_top' ) }>
+						onClick={() => window.open('auth/github', '_top')}>
 						Entrar com Github
 					</button>
 				</p>
@@ -26,3 +27,4 @@ export default () => (
 		</div>
 	</BrowserRouter>
 );
+export default login;

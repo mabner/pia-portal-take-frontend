@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Main from '../template/Main';
 
 const headerProps = {
@@ -10,22 +10,22 @@ const headerProps = {
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 const initialState = {
-	tools: { name: '', description: '', usage: '', tURL: '' },
+	tools: {name: '', description: '', usage: '', tURL: ''},
 	list: [],
 };
 export default class ToolsCrud extends Component {
-	state = { ...initialState };
+	state = {...initialState};
 
 	// Function will be called when the component is to be shown in the screen
 	componentWillMount() {
 		axios(BASE_URL).then((resp) => {
-			this.setState({ list: resp.data });
+			this.setState({list: resp.data});
 		});
 	}
 
 	// Clears the form
 	clear() {
-		this.setState({ tools: initialState.tools });
+		this.setState({tools: initialState.tools});
 	}
 
 	// Saves new tools or alters existing one
@@ -40,7 +40,7 @@ export default class ToolsCrud extends Component {
 		axios[method](url, tools).then((resp) => {
 			// resp.data returns the data returned from the webservice
 			const list = this.getUpdatedList(resp.data);
-			this.setState({ tools: initialState.tools, list });
+			this.setState({tools: initialState.tools, list});
 		});
 	}
 
@@ -52,9 +52,9 @@ export default class ToolsCrud extends Component {
 
 	updateField(event) {
 		// Clones the tool with a spread operator
-		const tools = { ...this.state.tools };
+		const tools = {...this.state.tools};
 		tools[event.target.name] = event.target.value;
-		this.setState({ tools });
+		this.setState({tools});
 	}
 
 	renderForm() {
@@ -109,12 +109,12 @@ export default class ToolsCrud extends Component {
 								name="tURL"
 								value={this.state.tools.tURL}
 								onChange={(event) => this.updateField(event)}
-								placeholder="Digite a URL da ferramenta... http://"
+								placeholder="Digite a URL da ferramenta... https://"
 							/>
 						</div>
 					</div>
 				</div>
-				<hr />
+				<hr/>
 				<div className="row">
 					<div className="col-12 d-flex justify-content-end">
 						<button
@@ -140,13 +140,13 @@ export default class ToolsCrud extends Component {
 
 	// Updates the tools state
 	load(tools) {
-		this.setState({ tools });
+		this.setState({tools});
 	}
 
 	remove(tool) {
-		axios.delete(`${BASE_URL}/${tool._id}`).then((resp) => {
+		axios.delete(`${BASE_URL}/${tool._id}`).then((_resp) => {
 			const list = this.getUpdatedList(tool, false);
-			this.setState({ list });
+			this.setState({list});
 		});
 	}
 
@@ -154,12 +154,12 @@ export default class ToolsCrud extends Component {
 		return (
 			<table className="table mt-4">
 				<thead>
-					<tr>
-						<th>Nome</th>
-						<th>Descrição</th>
-						<th>Tema</th>
-						<th>URL</th>
-					</tr>
+				<tr>
+					<th>Nome</th>
+					<th>Descrição</th>
+					<th>Tema</th>
+					<th>URL</th>
+				</tr>
 				</thead>
 				<tbody>{this.renderRow()}</tbody>
 			</table>
@@ -167,8 +167,7 @@ export default class ToolsCrud extends Component {
 	}
 
 	renderRow() {
-		return this.state.list.map( ( tools ) =>
-		{
+		return this.state.list.map((tools) => {
 			return (
 				<tr key={tools._id}>
 					<td>{tools.name}</td>
@@ -176,23 +175,23 @@ export default class ToolsCrud extends Component {
 					<td>{tools.usage}</td>
 					<td>
 						<div>
-					<a href={tools.tURL} target="_blank" rel="noreferrer">
-							{tools.tURL}
+							<a href={tools.tURL} target="_blank" rel="noreferrer">
+								{tools.tURL}
 							</a>
-							</div>
+						</div>
 					</td>
 					<td>
 						<button
 							className="btn btn-warning"
 							onClick={() => this.load(tools)}
 						>
-							<i className="fas fa-pencil-alt"></i>
+							<i className="fas fa-pencil-alt"/>
 						</button>
 						<button
 							className="btn btn-danger ml-2"
 							onClick={() => this.remove(tools)}
 						>
-							<i className="fas fa-trash"></i>
+							<i className="fas fa-trash"/>
 						</button>
 					</td>
 				</tr>
