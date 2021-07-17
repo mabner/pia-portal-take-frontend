@@ -77,7 +77,7 @@ export default class ToolsCrud extends Component {
 					<div className="col-12 col-md-6">
 						<div className="form-group">
 							<label>Descrição</label>
-							<input
+							<textarea
 								type="text"
 								className="form-control"
 								name="description"
