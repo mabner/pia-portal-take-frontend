@@ -1,46 +1,46 @@
 .btn-github {
-    background-color: #2a2a2a;
-    background-image: url('../assets/images/github.svg');
-    background-position: 1em;
-    background-repeat: no-repeat;
-    background-size: 2em;
-    border-radius: 0.5em;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1em;
-    height: 3em;
-    line-height: 1em;
-    padding: 0 2em 0 4em;
-    text-decoration: none;
-    transition: all 0.5s;
+	background-color: #2a2a2a;
+	background-image: url('../assets/images/github.svg');
+	background-position: 1em;
+	background-repeat: no-repeat;
+	background-size: 2em;
+	border-radius: 0.5em;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 1em;
+	height: 3em;
+	line-height: 1em;
+	padding: 0 2em 0 4em;
+	text-decoration: none;
+	transition: all 0.5s;
 }
 
 .btn-github:hover {
-    background-color: #444444;
+	background-color: #444444;
 }
 
 .btn-github:active {
-    background-color: #101010;
+	background-color: #101010;
 }
 
 #login-logo {
-    width: auto;
-    height: 600px;
+	width: auto;
+	height: 600px;
 }
 
 #login-logo-container {
-    max-width: 50%;
-    max-height: 100%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
+	max-width: 50%;
+	max-height: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #login-btn-container {
-    max-width: 50%;
-    max-height: 100%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
+	max-width: 50%;
+	max-height: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
 }

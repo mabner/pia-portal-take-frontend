@@ -17,7 +17,8 @@ export default class ToolsCrud extends Component {
 	state = {...initialState};
 
 	// Function will be called when the component is to be shown in the screen
-	componentWillMount() {
+	componentWillMount ()
+	{
 		axios(BASE_URL).then((resp) => {
 			this.setState({list: resp.data});
 		});
@@ -78,7 +79,6 @@ export default class ToolsCrud extends Component {
 						<div className="form-group">
 							<label>Descrição</label>
 							<textarea
-								type="text"
 								className="form-control"
 								name="description"
 								value={this.state.tools.description}
@@ -171,7 +171,7 @@ export default class ToolsCrud extends Component {
 			return (
 				<tr key={tools._id}>
 					<td>{tools.name}</td>
-					<td>{tools.description}</td>
+					<td>{ tools.description }</td>
 					<td>{tools.usage}</td>
 					<td>
 						<div>

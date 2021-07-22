@@ -5,16 +5,16 @@ import App from './main/App';
 // import Login from './main/Login';
 import reportWebVitals from './reportWebVitals';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize( 'UA-199987882-1' );
+
 // Return
 ReactDOM.render(
 	<React.StrictMode>
-		{/*<Login/>*/}
-		<App/>
+		{/*<Login/>*/ }
+		<App />
 	</React.StrictMode>,
-	document.getElementById('root'),
+	document.getElementById( 'root' ),
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
