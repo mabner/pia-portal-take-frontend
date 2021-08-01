@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import Main from '../template/Main';
+import Card from './Card';
 
 const headerProps = {
 	icon: 'map',
@@ -13,6 +14,7 @@ const initialState = {
 	tools: { name: '', description: '', usage: '', tURL: '' },
 	list: [],
 };
+
 export default class Map extends Component {
 	state = { ...initialState };
 
@@ -21,12 +23,6 @@ export default class Map extends Component {
 		axios(BASE_URL).then((resp) => {
 			this.setState({ list: resp.data });
 		});
-	}
-
-	getUpdatedList(tools, add = true) {
-		const list = this.state.list.filter((t) => t._id !== tools._id);
-		if (add) list.unshift(tools);
-		return list;
 	}
 
 	// Updates the tools state
@@ -38,7 +34,7 @@ export default class Map extends Component {
 		return this.state.list.map((tools) => {
 			return (
 				<div className="grid">
-					<div className="crad-header">
+					<div className="card-header">
 						<span className="card-title">{tools.usage}</span>
 						<div>{this.renderCard()}</div>
 					</div>
@@ -51,17 +47,13 @@ export default class Map extends Component {
 		return this.state.list.map((tools) => {
 			return (
 				<div key={tools._id} className="card">
-					<td>{tools.name}</td>
-					<td>{tools.description}</td>
-					<td>{tools.usage}</td>
-					<td>
-						<div>
-							<a href={tools.tURL} target="_blank" rel="noreferrer">
-								{tools.tURL}
-							</a>
-						</div>
-					</td>
-					<td></td>
+					<div>
+						<a href={tools.tURL} target="_blank" rel="noreferrer">
+							{tools.name}
+						</a>
+					</div>
+					<div>{tools.description}</div>
+					<div>{tools.usage}</div>
 				</div>
 			);
 		});
