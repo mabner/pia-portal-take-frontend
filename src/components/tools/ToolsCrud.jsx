@@ -4,7 +4,7 @@ import Main from '../template/Main';
 
 const headerProps = {
 	icon: 'tools',
-	title: 'Ferramentas',
+	title: 'Cadastro de Ferramentas',
 	subtitle: 'Cadastro de ferramentas: Incluir, Listar, Alterar e Excluir.',
 };
 
