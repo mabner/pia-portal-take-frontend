@@ -1,3 +1,4 @@
+import './ToolsCrud.css';
 import axios from 'axios';
 import React, { Component } from 'react';
 import Main from '../template/Main';
@@ -170,7 +171,7 @@ export default class ToolsCrud extends Component {
 			return (
 				<tr key={tools._id}>
 					<td>{tools.name}</td>
-					<td>{tools.description}</td>
+					<td className="crud-description">{tools.description}</td>
 					<td>{tools.usage}</td>
 					<td>
 						<div>

@@ -33,11 +33,11 @@ export default class Map extends Component {
 	renderTable() {
 		return this.state.list.map((tools, index) => {
 			return (
-				<div key={index} className="card">
-					<div className="card-header">
-						<div>{tools.usage}</div>
+				<div className="col">
+					<div key={index} className="card">
+						<div className="card-header">{tools.usage}</div>
+						{this.renderCard(tools)}
 					</div>
-					{this.renderCard(tools)}
 				</div>
 			);
 		});
@@ -59,6 +59,12 @@ export default class Map extends Component {
 	}
 
 	render() {
-		return <Main {...headerProps}>{this.renderTable()}</Main>;
+		return (
+			<Main {...headerProps}>
+				<div className="row row-cols-1 row-cols-md-2 g-4">
+					{this.renderTable()}
+				</div>
+			</Main>
+		);
 	}
 }
