@@ -32,19 +32,21 @@ export default class Map extends Component {
 	renderTable() {
 		return this.state.list.map((tools) => {
 			return (
-				<div className="grid">
+				<div className="container">
 					<div className="card-header">
-						<span className="card-title">{tools.usage}</span>
-						<div>{this.renderCard()}</div>
+						<div className="card-title">{tools.usage}</div>
+					</div>
+					<div key={tools._id} className="card">
+						<div>{this.renderCard(tools)}</div>
 					</div>
 				</div>
 			);
 		});
 	}
 
-	renderCard() {
-		return this.state.list.map((tools) => {
-			return (
+	renderCard(tools) {
+		return (
+			<>
 				<div key={tools._id} className="card">
 					<div>
 						<a href={tools.tURL} target="_blank" rel="noreferrer">
@@ -54,8 +56,8 @@ export default class Map extends Component {
 					<div>{tools.description}</div>
 					<div>{tools.usage}</div>
 				</div>
-			);
-		});
+			</>
+		);
 	}
 
 	render() {
