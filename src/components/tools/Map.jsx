@@ -1,3 +1,4 @@
+import './Map.css';
 import axios from 'axios';
 import React, { Component } from 'react';
 import Main from '../template/Main';
@@ -50,8 +51,7 @@ export default class Map extends Component {
 						{tools.name}
 					</a>
 				</div>
-					<div>{tools.description}</div>
-					<div>{tools.usage}</div>
+				<div className="card-text tool-description">
 					{tools.description}
 				</div>
 			</div>
