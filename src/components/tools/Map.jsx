@@ -30,15 +30,13 @@ export default class Map extends Component {
 	}
 
 	renderTable() {
-		return this.state.list.map((tools) => {
+		return this.state.list.map((tools, index) => {
 			return (
-				<div className="container">
+				<div key={index} className="card">
 					<div className="card-header">
-						<div className="card-title">{tools.usage}</div>
+						<div>{tools.usage}</div>
 					</div>
-					<div key={tools._id} className="card">
-						<div>{this.renderCard(tools)}</div>
-					</div>
+					{this.renderCard(tools)}
 				</div>
 			);
 		});
@@ -46,17 +44,17 @@ export default class Map extends Component {
 
 	renderCard(tools) {
 		return (
-			<>
-				<div key={tools._id} className="card">
-					<div>
-						<a href={tools.tURL} target="_blank" rel="noreferrer">
-							{tools.name}
-						</a>
-					</div>
+			<div key={tools._id} className="card-body">
+				<div className="card-title">
+					<a href={tools.tURL} target="_blank" rel="noreferrer">
+						{tools.name}
+					</a>
+				</div>
 					<div>{tools.description}</div>
 					<div>{tools.usage}</div>
+					{tools.description}
 				</div>
-			</>
+			</div>
 		);
 	}
 
