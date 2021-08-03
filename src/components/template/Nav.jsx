@@ -15,6 +15,9 @@ const nav = () => (
 			<Link to="/map">
 				<i className="fas fa-map" /> Mapa
 			</Link>
+			<Link to="/logout">
+				<i className="fas fa-sign-out-alt" /> Logout
+			</Link>
 		</nav>
 	</aside>
 );
