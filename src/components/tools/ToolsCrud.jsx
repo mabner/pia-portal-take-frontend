@@ -74,6 +74,11 @@ export default class ToolsCrud extends Component {
 								onChange={(event) => this.updateField(event)}
 								placeholder="Digite o nome da ferramenta..."
 							/>
+							<IconButton
+								style="info"
+								icon="search"
+								onClick={this.props.searchTool}
+							></IconButton>
 						</div>
 					</div>
 					<div className="col-12 col-md-6">
