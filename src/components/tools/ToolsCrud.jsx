@@ -2,6 +2,7 @@ import './ToolsCrud.css';
 import axios from 'axios';
 import React, { Component } from 'react';
 import Main from '../template/Main';
+import IconButton from '../template/IconButton';
 
 const headerProps = {
 	icon: 'tools',
@@ -117,21 +118,19 @@ export default class ToolsCrud extends Component {
 				<hr />
 				<div className="row">
 					<div className="col-12 d-flex justify-content-end">
-						<button
-							className="btn btn-success"
+						<IconButton
+							style="success"
+							icon="save"
 							// @ts-ignore
 							onClick={(event) => this.save(event)}
-						>
-							Salvar
-						</button>
-
-						<button
-							className="btn btn-secondary ml-2"
-							// @ts-ignore
+							text="Salvar"
+						></IconButton>
+						<IconButton
+							style="danger"
+							icon="window-close"
 							onClick={(event) => this.clear(event)}
-						>
-							Cancelar
-						</button>
+							text="Cancelar"
+						></IconButton>
 					</div>
 				</div>
 			</div>
@@ -181,18 +180,16 @@ export default class ToolsCrud extends Component {
 						</div>
 					</td>
 					<td>
-						<button
-							className="btn btn-warning"
+						<IconButton
+							style="warning"
+							icon="pencil-alt"
 							onClick={() => this.load(tools)}
-						>
-							<i className="fas fa-pencil-alt" />
-						</button>
-						<button
-							className="btn btn-danger ml-2"
+						></IconButton>
+						<IconButton
+							style="danger"
+							icon="trash"
 							onClick={() => this.remove(tools)}
-						>
-							<i className="fas fa-trash" />
-						</button>
+						></IconButton>
 					</td>
 				</tr>
 			);
