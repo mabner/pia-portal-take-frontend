@@ -11,9 +11,9 @@ const Routes = () => {
 	useGaTracker();
 	return (
 		<Switch>
-			<Route exact path="/home" component={withTracker(Home)} />
+			<Route exact path="/" component={withTracker(Home)} />
 			<Route path="/tools" component={withTracker(ToolsCrud)} />
-			<Route path="/" component={withTracker(Login)} />
+			<Route path="/login" component={withTracker(Login)} />
 			<Route path="/map" component={withTracker(Map)} />
 			{/* <Redirect from="*" to="/" /> */}
 		</Switch>
