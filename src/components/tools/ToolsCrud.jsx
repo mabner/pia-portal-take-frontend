@@ -128,7 +128,7 @@ export default class ToolsCrud extends Component {
 						<IconButton
 							style="danger"
 							icon="window-close"
-							onClick={(event) => this.clear(event)}
+							onClick={() => this.clear()}
 							text="Cancelar"
 						></IconButton>
 					</div>
@@ -155,7 +155,7 @@ export default class ToolsCrud extends Component {
 				<thead>
 					<tr>
 						<th>Nome</th>
-						<th>Descrição</th>
+						{/* <th>Descrição</th> */}
 						<th>Tema</th>
 						<th>URL</th>
 					</tr>
@@ -170,7 +170,7 @@ export default class ToolsCrud extends Component {
 			return (
 				<tr key={tools._id}>
 					<td>{tools.name}</td>
-					<td className="crud-description">{tools.description}</td>
+					{/* <td className="crud-description">{tools.description}</td> */}
 					<td>{tools.usage}</td>
 					<td>
 						<div>
