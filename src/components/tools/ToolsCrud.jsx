@@ -1,8 +1,8 @@
-import './ToolsCrud.css';
 import axios from 'axios';
 import React, { Component } from 'react';
-import Main from '../template/Main';
 import IconButton from '../template/IconButton';
+import Main from '../template/Main';
+import './ToolsCrud.css';
 
 const headerProps = {
 	icon: 'tools',

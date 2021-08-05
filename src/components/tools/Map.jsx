@@ -1,7 +1,7 @@
-import './Map.css';
 import axios from 'axios';
 import React, { Component } from 'react';
 import Main from '../template/Main';
+import './Map.css';
 
 const headerProps = {
 	icon: 'map',

@@ -1,11 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../assets/images/logo-header.svg';
-
-import './Login.css';
-
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import logo from '../assets/images/logo-header.svg';
 import Main from '../components/template/Main';
+import './Login.css';
 
 const headerProps = {
 	icon: 'login',

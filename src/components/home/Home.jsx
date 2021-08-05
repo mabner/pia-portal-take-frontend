@@ -11,18 +11,6 @@ const home = () => (
 			Portal desenvolvido para agrupar as ferramentas de Data & Analytics em
 			um mesmo lugar, facilitando seu acesso.
 		</p>
-		<div id="login-btn-container">
-			<p>
-				<button
-					className="btn-github"
-					type="button"
-					onClick={() => window.open(`${BACK_URL}/auth/github`, '_top')}
-				>
-					Entrar com Github
-				</button>
-				<br />
-			</p>
-		</div>
 	</Main>
 );
 export default home;
