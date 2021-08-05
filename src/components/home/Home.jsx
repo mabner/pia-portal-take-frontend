@@ -1,6 +1,7 @@
 import React from 'react';
 import Main from '../template/Main';
 
+const BACK_URL = process.env.REACT_APP_BACK_URL;
 
 const home = () => (
 	<Main icon="home" title="Início" subtitle="Portal de Ferramentas">
@@ -15,7 +16,7 @@ const home = () => (
 				<button
 					className="btn-github"
 					type="button"
-					onClick={() => window.open('/auth/github', '_top')}
+					onClick={() => window.open(`${BACK_URL}/auth/github`, '_top')}
 				>
 					Entrar com Github
 				</button>
