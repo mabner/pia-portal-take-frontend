@@ -1,30 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Cookies from 'js-cookie';
 import './Nav.css';
 
 const BACK_URL = process.env.REACT_APP_BACK_URL;
 
-let dotcom_user = '';
+let profile = Cookies.get('dotcom_user');
 
-let cookieValue = '';
-
-function getCookie(name) {
-	if (document.cookie && document.cookie !== '') {
-		var cookies = document.cookie.split(';');
-		for (var i = 0; i < cookies.length; i++) {
-			var cookie = cookies[i].trim();
-			if (cookie.substring(0, name.length + 1) === name + '=') {
-				cookieValue = decodeURIComponent(
-					cookie.substring(name.length + 20)
-				);
-				break;
-			}
-		}
-	}
-	return cookieValue;
-}
-
-let profile = getCookie(dotcom_user);
 
 const nav = () => (
 	<aside className="menu-area">
