@@ -5,12 +5,14 @@ import './Nav.css';
 
 const BACK_URL = process.env.REACT_APP_BACK_URL;
 
-let profile = Cookies.get('dotcom_user');
-
+let cookieValue = document.cookie.replace(
+	/(?:(?:^|.*;\s*)dotcom_user\s*\=\s*([^;]*).*$)|^.*$/,
+	'$1'
+);
 
 const nav = () => (
 	<aside className="menu-area">
-		<span className="text-warning">Perfil: {profile}</span>
+		<span className="text-warning">Perfil: {cookieValue}</span>
 		<nav className="menu">
 			{/* Refatorar pra componente */}
 			<Link to="/">
