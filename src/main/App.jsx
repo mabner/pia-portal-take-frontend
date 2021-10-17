@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/brands.min.css';
 
 import './App.css';
 import React from 'react';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import Logo from '../components/template/Logo';
 import Nav from '../components/template/Nav';
@@ -15,13 +15,13 @@ import Footer from '../components/template/Footer';
 // Test <HashRouter> for deploy if <BrowserRouter> presents any problems
 
 const app = () => (
-	<HashRouter>
+	<BrowserRouter>
 		<div className="app">
 			<Logo />
 			<Nav />
 			<Routes />
 			<Footer />
 		</div>
-	</HashRouter>
+	</BrowserRouter>
 );
 export default app;
